@@ -14,11 +14,13 @@ sequali /data/raw_reads/ERR1539001.fastq.gz
 
 ## Filtlong
 
+this is how we use filtlong
+
 ```{bash}
 # for filtering
 #filtlong (--min_length 1000 and either --keep_percent 90 or --min_mean_q 7)
 
 filtlong --min_length 1000 --keep_percent 90 \
-  data/raw_reads/ERR1539001.fastq.gz | gzip > data/clean_reads/ont_filtered.fastq.gz
+  data/raw_reads/ERR1539001.fastq.gz | gzip > data/clean_reads/ERR1539001_filtered.fastq.gz
   
 ```
